@@ -108,15 +108,15 @@ console.log("Total Profit: £", totalProfit)
 
 let average = totalProfit/finances.length
 average = average.toFixed(2)
-console.log(average)
+console.log("Average  Change: ", average)
 
 var leastvalue = finances.sort(function(a,b) {
   return a[1] - b[1];
 })
-console.log(leastvalue[0])
+console.log("Greatest Decrease in Profits: ", leastvalue[0][0]+" "+ leastvalue[0][1])
 
 var greatestvalue = finances.sort(function (a,b) {
   return b[1] - a[1];
 })
 
-console.log(greatestvalue[0])
+console.log("Greatest Increase in Profits: ", greatestvalue[0][0]+" "+ greatestvalue[0][1])
